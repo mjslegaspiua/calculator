@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Page Background */
+.App {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px 15px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4efea; /* Warm vanilla cream */
+}
+
+/* Header Text */
+.Header {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #3c2a21; /* Espresso brown */
+  letter-spacing: 0.5px;
+}
+
+/* Outer Frame */
+.calculator-frame {
+  background-color: #d7c4b7; /* Warm latte frame */
+  padding: 22px;
+  border-radius: 20px;
+  border: 3px solid #8b5e3c; /* Mocha border */
+  box-shadow: 0 10px 25px rgba(60, 42, 33, 0.2);
+}
+
+/* Calculator Body */
+.calculator {
+  width: 340px;
+  max-width: 100%;
+  margin: 0 auto;
+  border: 2px solid #5c3d2e;
+  border-radius: 14px;
+  padding: 18px;
+  background-color: #3c2a21; /* Dark coffee bean */
+}
+
+/* Display Screen */
+.Display {
+  border: 2px solid #5c3d2e;
+  border-radius: 10px;
+  height: 65px;
+  line-height: 65px;
+  font-size: 2.2em;
+  font-weight: 600;
+  text-align: right;
+  background-color: #1e130d; /* Very dark roasted coffee */
+  color: #f5ebe0; /* Soft milk cream text */
+  padding: 0 18px;
+  margin-bottom: 18px;
+  overflow: hidden;
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Grid & Spacing */
+.Keypad {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Buttons */
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #a58e7c;
+  border-radius: 8px;
+  background-color: #e6ccb2; /* Creamy latte */
+  color: #3c2a21;
+  padding: 16px 0;
+  font-size: 1.25em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  box-shadow: 0 3px 0 #b8977e;
+}
+
+.button:hover {
+  background-color: #ddbf9d;
+}
+
+.button:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 #b8977e;
+}
+
+/* Red Accent for CLR Button */
+.button.clr {
+  background-color: #b93829;
+  color: #ffffff;
+  border-color: #8f271c;
+  box-shadow: 0 3px 0 #7e2017;
+}
+
+.button.clr:hover {
+  background-color: #a12f22;
+}
+
+.button.clr:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 #7e2017;
+}
